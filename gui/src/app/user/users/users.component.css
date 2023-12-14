@@ -1,0 +1,48 @@
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:var(--color-primary);
+    color: white;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table tr{
+    background-color: #fafafa;
+}
+
+.table tr:hover {
+    background-color: #e0dddd;
+}
+
+.btn{
+    color: #000;
+    background-color: #fafafa;
+    width: 25%;
+    height: 25%;
+    margin-right: 25%;
+}
+
+.btn:hover{
+    color: red;
+    background-color: #e0dddd;
+
+}
+
+.btn-edit{
+    color: #000;
+    background-color: #fafafa;
+    border-radius: 10px;
+    height: 25%;
+    width: 25%;
+
+}
+
+.btn-edit:hover{
+    color:  var(--color-primary);
+    background-color: #e0dddd;
+}

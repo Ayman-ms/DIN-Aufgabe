@@ -1,0 +1,72 @@
+<div class="limiter">
+    <div class="container-login">
+        <div class="wrap-login">
+            <div class="login-pic js-tilt" data-tilt>
+                <img src="/assets/din-logo.ico" alt="IMG">
+            </div>
+
+            <form class="login-form validate-form">
+                <span class="form-title">
+                    Member Login
+                </span>
+
+                <div class="wrap-input validate-input" data-validate="Email: ex@abc.xyz">
+                    <input class="input sam" type="text" [(ngModel)]="userToLogin.userName" [(ngModel)]="userToLogin.email"
+                        name="email" placeholder="Email Or Username" required >
+                    <span class="focus-input"></span>
+                </div>
+
+                <div class="wrap-input validate-input" data-validate="Password is required">
+                    <input class="input" type="password" [(ngModel)]="userToLogin.password" name="pass"
+                        placeholder="Password" required >
+                    <span class="focus-input"></span>
+                </div>
+
+                <div class="container-login-form-btn">
+                    <button class="login-form-btn" type="submit" (click)="loginClick()">
+                        Login
+                    </button>
+                </div>
+
+                <div class="text-center p-t-12">
+                    <span class="txt">
+                        Forgot
+                    </span>
+                    <a class="txt" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                        Username / Password?
+                    </a>
+                </div>
+
+                <div class="text-center p-t-136">
+                    <a class="txt" routerLink="/userRegister" routerLinkActive="active-link">
+                        Create your Account
+                        <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- forget password dialog -->
+<div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-title"> Forgget Password </h5>
+                <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="close">X</button>
+            </div>
+            <div class="mpdal-body">
+                <label for="modal-email" class="form-label m-3">
+                    Please enter your Email
+                </label>
+                <input type="email" class="form-control input mx-auto d-block dialog-input" id="modal-email"
+                    placeholder="e.g. email@mail.com">
+                <span class="focus-input"></span>
+            </div>
+            <div class="modal-footer mt-2">
+                <button class=" btn dialog-btn">Send Code</button>
+            </div>
+        </div>
+    </div>
+</div>

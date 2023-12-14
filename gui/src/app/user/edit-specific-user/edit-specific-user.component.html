@@ -1,0 +1,47 @@
+<form [formGroup]="userForm" ngForm="userForm">
+    <div class="container-users">
+        <div class="wrap-edit">
+            <span class="form-title">
+                {{userToEdit.userName }} Profile
+            </span>
+
+            <div class="grid mx-auto d-block ">
+                <label for="fname">{{userToEdit.userName}}</label>
+                <div class="wrap-input validate-input">
+                    <input type="text" class="input" id="floatingInput" placeholder="Your Username is {{userToEdit.userName}}" 
+                    [(ngModel)]="userToEdit.userName" formControlName="userNameControl">
+                </div>
+                
+                <div class="wrap-input validate-input ">
+                <label for="fname">Email</label>
+                    <input class="input" type="text" placeholder={{userToEdit.email}}
+                    [(ngModel)]="userToEdit.email" formControlName="passwordControl">
+                </div>
+
+                <div class="wrap-input validate-input ">
+                <label for="fname">Password</label>
+                    <input class="input" type="password"
+                    [(ngModel)]="userToEdit.password" formControlName="emailControl">
+                </div>
+
+                <div class="wrap-input validate-input "  *ngIf="userIsAdmin">
+                <label for="fname">Roll</label>
+
+                    <select class="input" [value]="userToEdit.roll" formControlName="rollControl" 
+                    [(ngModel)]="userToEdit.roll" id="floatingSelect"
+                        aria-label="Floating label select">
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <button class="btn" type="submit" (click)="updateClick()">
+                        Update
+                    </button>
+                </div>
+            </div>  
+        </div>              
+                                  
+    </div>
+</form>

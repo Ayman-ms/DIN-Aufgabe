@@ -1,0 +1,25 @@
+.navbar-brand img{
+  width: 50%;
+  height: 50%;
+}
+
+.navbar .nav-link.nav-link {
+  padding-right: var(--padding-primary);
+  padding-left: var(--padding-primary);
+  padding: var(--padding-double) var(--padding-primary);
+}
+  .navbar .nav-link.nav-link.active,
+.navbar .nav-link.nav-link:hover {
+  background-color: var(--color-primary);
+  color: white;
+  max-height: 100%;
+}
+
+.navbar-brand-logo img{
+  width: 50px;
+  margin-right: 10px;
+}
+
+.navbar-brand h1 {
+  margin: 0
+}

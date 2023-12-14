@@ -1,0 +1,69 @@
+
+  /* start button */
+  .btn {
+    outline: none !important;
+    border: none;
+    background: transparent;
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-card);
+    text-transform: uppercase;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background-color: #14608f;
+}
+
+/* end button */
+
+/* Responsive */ 
+
+@media (max-width: 992px) {
+  .maindiv{
+    width: 90%;
+  }
+  .input {
+    width: 100%;
+  }
+
+  .login-pic {
+    width: 35%;
+  }
+
+  .login-form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .maindiv{
+    width: 90%;
+  }
+  .input {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .maindiv{
+    width: 90%;
+  }
+  .input {
+    width: 100%;
+    padding:5px
+  }
+} 
